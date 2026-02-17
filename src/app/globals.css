@@ -1,26 +1,209 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #6C5CE7;
+  --color-primary-light: #A29BFE;
+  --color-secondary: #00CEC9;
+  --color-accent: #FDCB6E;
+  --color-accent-pink: #E84393;
+  --color-danger: #FF6B6B;
+  --color-success: #00B894;
+  --color-bg-dark: #0F0A1E;
+  --color-bg-card: #1A1333;
+  --color-bg-card-light: #2D2052;
+  --color-text: #F5F5F5;
+  --color-text-secondary: #B2B2D8;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: 'Outfit';
+  src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  background: var(--color-bg-dark);
+  color: var(--color-text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Game Background */
+.game-bg {
+  background: linear-gradient(135deg, #0F0A1E 0%, #1A1040 30%, #0D1B3E 60%, #0F0A1E 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+.game-bg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.15), transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.1), transparent),
+    radial-gradient(2px 2px at 50px 160px, rgba(255,255,255,0.12), transparent),
+    radial-gradient(2px 2px at 90px 40px, rgba(255,255,255,0.08), transparent),
+    radial-gradient(3px 3px at 130px 80px, rgba(255,255,255,0.15), transparent),
+    radial-gradient(2px 2px at 160px 120px, rgba(255,255,255,0.1), transparent);
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  pointer-events: none;
+  z-index: 0;
+  animation: twinkle 4s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(108, 92, 231, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(108, 92, 231, 0.6); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+@keyframes coin-spin {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+.animate-coin-spin {
+  animation: coin-spin 1s ease-in-out;
+}
+
+/* Glass morphism card */
+.glass-card {
+  background: rgba(26, 19, 51, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(108, 92, 231, 0.4);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(108, 92, 231, 0.6);
+}
+
+/* Zone path connector */
+.zone-path {
+  position: absolute;
+  width: 4px;
+  background: linear-gradient(to bottom, rgba(108, 92, 231, 0.6), rgba(0, 206, 201, 0.6));
+  border-radius: 2px;
+}
+
+/* Hearts styling */
+.heart {
+  color: #FF6B6B;
+  filter: drop-shadow(0 0 6px rgba(255, 107, 107, 0.5));
+}
+
+.heart-empty {
+  color: #4a4a6a;
+  filter: none;
+}
+
+/* XP bar */
+.xp-bar-bg {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.xp-bar-fill {
+  background: linear-gradient(90deg, #6C5CE7, #A29BFE, #00CEC9);
+  border-radius: 999px;
+  transition: width 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Button styles */
+.btn-game {
+  background: linear-gradient(135deg, #6C5CE7, #A29BFE);
+  border: none;
+  border-radius: 16px;
+  padding: 12px 28px;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-game:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(108, 92, 231, 0.4);
+}
+
+.btn-game:active {
+  transform: translateY(0px);
+}
+
+.btn-game-success {
+  background: linear-gradient(135deg, #00B894, #00CEC9);
+}
+
+.btn-game-danger {
+  background: linear-gradient(135deg, #FF6B6B, #E84393);
+}
+
+.btn-game-gold {
+  background: linear-gradient(135deg, #F59E0B, #FDCB6E);
+  color: #1A1333;
 }
