@@ -638,6 +638,33 @@
           "correctAnswer": 1,
           "xpReward": 25
         }
+      ],
+      "topicSummary": "<h3>Şehirde Yön Tarifi</h3><p>Şehirdeki yerleri tarif ederken <strong>Yer Edatlarını (Prepositions)</strong> kullanırız:</p><ul><li><strong>Next to:</strong> Yanında</li><li><strong>Behind:</strong> Arkasında</li><li><strong>Between:</strong> Arasında</li><li><strong>In front of:</strong> Önünde</li></ul><p><strong>Yön Tarifi Verirken:</strong></p><ul><li><strong>Turn left:</strong> Sola dön</li><li><strong>Turn right:</strong> Sağa dön</li><li><strong>Go straight:</strong> Düz git</li></ul>",
+      "readingQuestions": [
+        {
+          "id": "rq2-1",
+          "text": "Ali: Excuse me, where is the hospital?\nPolice: Go straight, then turn right. It is next to the park.\nAli: Thank you!\nPolice: You're welcome.",
+          "question": "Where is the hospital?",
+          "options": [
+            "Behind the park",
+            "Next to the park",
+            "In front of the school",
+            "Near the bank"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq2-2",
+          "text": "My city is very beautiful. There is a big library. The library is between the school and the museum. I go to the library every Saturday.",
+          "question": "Where is the library?",
+          "options": [
+            "Next to the park",
+            "Between the school and museum",
+            "Behind the bank",
+            "In front of the hospital"
+          ],
+          "correctAnswer": 1
+        }
       ]
     },
     {
@@ -947,6 +974,33 @@
           "correctAnswer": 1,
           "xpReward": 25
         }
+      ],
+      "topicSummary": "<h3>Aile Üyeleri ve \"Have Got\"</h3><p>Ailemizi tanıtırken şu kelimeleri kullanırız:</p><ul><li><strong>Mother/Father:</strong> Anne/Baba</li><li><strong>Sister/Brother:</strong> Kız/Erkek Kardeş</li><li><strong>Grandmother/Grandfather:</strong> Büyükanne/Büyükbaba</li></ul><p><strong>Sahip Olmak (Have/Has got):</strong></p><ul><li>I/You/We/They <strong>have got</strong> a car.</li><li>He/She/It <strong>has got</strong> a cat.</li></ul>",
+      "readingQuestions": [
+        {
+          "id": "rq3-1",
+          "text": "Hello, I am Sarah. I have got a big family. I have got two brothers and one sister. My brother Tom is tall. My sister Mary has got blue eyes.",
+          "question": "How many brothers does Sarah have?",
+          "options": [
+            "One",
+            "Two",
+            "Three",
+            "Four"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq3-2",
+          "text": "My grandfather is very old. He has got a farm. He has got cows, sheep, and chickens. I love visiting him.",
+          "question": "What does the grandfather have?",
+          "options": [
+            "A car",
+            "A farm",
+            "A shop",
+            "A school"
+          ],
+          "correctAnswer": 1
+        }
       ]
     },
     {
@@ -1245,6 +1299,33 @@
           ],
           "correctAnswer": 1,
           "xpReward": 20
+        }
+      ],
+      "topicSummary": "<h3>Hobiler ve Sevilen Şeyler (Likes)</h3><p>Bir şeyi sevip sevmediğimizi anlatırken <strong>Simple Present Tense</strong> kullanırız.</p><ul><li><strong>I like</strong> swimming. (Yüzmeyi severim.)</li><li><strong>She likes</strong> reading. (O okumayı sever.)</li><li><strong>I don't like</strong> spiders. (Örümcekleri sevmem.)</li><li><strong>He doesn't like</strong> cooking. (O yemek yapmayı sevmez.)</li></ul>",
+      "readingQuestions": [
+        {
+          "id": "rq4-1",
+          "text": "Tom likes playing football. He plays football every day after school. But he doesn't like playing tennis. He thinks tennis is boring.",
+          "question": "What does Tom like doing?",
+          "options": [
+            "Playing tennis",
+            "Playing football",
+            "Reading books",
+            "Swimming"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq4-2",
+          "text": "My hobby is painting. I like painting flowers and trees. My pictures are very colorful. I don't like watching TV.",
+          "question": "What is the hobby?",
+          "options": [
+            "Watching TV",
+            "Painting",
+            "Singing",
+            "Dancing"
+          ],
+          "correctAnswer": 1
         }
       ]
     },
@@ -1557,6 +1638,33 @@
           "correctAnswer": 1,
           "xpReward": 25
         }
+      ],
+      "topicSummary": "<h3>Günlük Rutin ve Saatler</h3><p>Günlük işlerimizi anlatırken geniş zaman kullanırız.</p><ul><li>I <strong>wake up</strong> at 7 o'clock.</li><li>She <strong>goes</strong> to school by bus.</li></ul><p><strong>Saatleri Söyleme:</strong></p><ul><li><strong>It is 5 o'clock.</strong> (Saat 5.)</li><li><strong>It is half past 6.</strong> (Saat 6 buçuk.)</li><li><strong>It is quarter to 9.</strong> (9'a çeyrek var.)</li></ul>",
+      "readingQuestions": [
+        {
+          "id": "rq5-1",
+          "text": "I wake up at seven o'clock. I wash my face and brush my teeth. Then I have breakfast at half past seven. I eat eggs and drink milk.",
+          "question": "What time is breakfast?",
+          "options": [
+            "7:00",
+            "7:30",
+            "8:00",
+            "8:30"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq5-2",
+          "text": "Ayşe is a student. She goes to school at eight o'clock. She has lunch at school at twelve o'clock. She comes home at four o'clock.",
+          "question": "When does Ayşe come home?",
+          "options": [
+            "At 8:00",
+            "At 12:00",
+            "At 4:00",
+            "At 2:00"
+          ],
+          "correctAnswer": 2
+        }
       ]
     },
     {
@@ -1859,6 +1967,33 @@
           ],
           "correctAnswer": 1,
           "xpReward": 20
+        }
+      ],
+      "topicSummary": "<h3>Sağlık ve Tavsiyeler (Should)</h3><p>Hastalıkları ifade ederken \"I have...\" (Bende ... var) kalıbını kullanırız.</p><ul><li>I have a <strong>headache</strong>. (Başım ağrıyor.)</li><li>She has a <strong>fever</strong>. (Ateşi var.)</li></ul><p><strong>Tavsiye Vermek (Should):</strong></p><ul><li>You <strong>should</strong> see a doctor. (Doktora gitmelisin.)</li><li>You <strong>shouldn't</strong> drink cold water. (Soğuk su içmemelisin.)</li></ul>",
+      "readingQuestions": [
+        {
+          "id": "rq6-1",
+          "text": "Doctor: What is the matter?\nPatient: I have a sore throat and a cough.\nDoctor: You should drink warm tea and rest. You shouldn't shout.",
+          "question": "What is the advice?",
+          "options": [
+            "Eat ice cream",
+            "Drink warm tea",
+            "Go to school",
+            "Play football"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq6-2",
+          "text": "Ahmet feels cold. He has a fever. His mother says: \"You should stay in bed and take your medicine.\"",
+          "question": "What is wrong with Ahmet?",
+          "options": [
+            "He has a toothache",
+            "He has a fever",
+            "He has a broken leg",
+            "He is hungry"
+          ],
+          "correctAnswer": 1
         }
       ]
     },
@@ -2164,6 +2299,33 @@
           "correctAnswer": 1,
           "xpReward": 25
         }
+      ],
+      "topicSummary": "<h3>Film Türleri ve Davet Etme</h3><p>Film türleri: <strong>Comedy, Horror, Action, Animation</strong>.</p><p><strong>Birini Davet Etme:</strong></p><ul><li><strong>Would you like to</strong> watch a movie? (Film izlemek ister misin?)</li></ul><p><strong>Cevap Verme:</strong></p><ul><li><strong>Yes, that sounds great.</strong> (Evet, kulağa harika geliyor.)</li><li><strong>I'm sorry, I can't.</strong> (Üzgünüm, yapamam.)</li></ul>",
+      "readingQuestions": [
+        {
+          "id": "rq7-1",
+          "text": "Ali: Would you like to go to the cinema on Saturday?\nMehmet: What kind of movie is it?\nAli: It is a comedy movie.\nMehmet: That sounds great! I love comedies.",
+          "question": "What kind of movie will they watch?",
+          "options": [
+            "Horror",
+            "Action",
+            "Comedy",
+            "Drama"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "rq7-2",
+          "text": "Dear Mary,\nPlease come to my birthday party on Sunday at 2 o'clock. It will be fun!\nLove, Jane.",
+          "question": "What is the invitation for?",
+          "options": [
+            "A wedding",
+            "A birthday party",
+            "A school trip",
+            "A football match"
+          ],
+          "correctAnswer": 1
+        }
       ]
     },
     {
@@ -2463,6 +2625,33 @@
           ],
           "correctAnswer": 1,
           "xpReward": 20
+        }
+      ],
+      "topicSummary": "<h3>Yetenekler (Can / Can't)</h3><p>Bir şeyi yapabildiğimizi veya yapamadığımızı anlatırken <strong>Can</strong> kullanırız.</p><ul><li>I <strong>can</strong> swim. (Yüzebilirim.)</li><li>He <strong>can</strong> play guitar. (O gitar çalabilir.)</li><li>She <strong>can't</strong> fly. (O uçamaz.)</li><li><strong>Can</strong> you speak English? (İngilizce konuşabilir misin?)</li></ul>",
+      "readingQuestions": [
+        {
+          "id": "rq8-1",
+          "text": "Look at the monkey! It can climb trees very fast. It can jump from tree to tree. But it can't swim well.",
+          "question": "What can the monkey do?",
+          "options": [
+            "Swim well",
+            "Fly",
+            "Climb trees",
+            "Drive a car"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "rq8-2",
+          "text": "My brother is very talented. He can play the piano and the guitar. He can also sing songs. We love listening to him.",
+          "question": "What instruments can he play?",
+          "options": [
+            "Piano and Guitar",
+            "Fluet and Violin",
+            "Drums",
+            "Only Piano"
+          ],
+          "correctAnswer": 0
         }
       ]
     },
@@ -2769,6 +2958,33 @@
           ],
           "correctAnswer": 1,
           "xpReward": 20
+        }
+      ],
+      "topicSummary": "<h3>Şimdiki Zaman (Present Continuous)</h3><p>Şu anda (konuşma anında) yapılan eylemleri anlatırız.</p><ul><li>I <strong>am running</strong>. (Koşuyorum.)</li><li>The bird <strong>is flying</strong>. (Kuş uçuyor.)</li><li>They <strong>are playing</strong> football. (Onlar futbol oynuyorlar.)</li></ul><p>Formül: <strong>am/is/are + Fiil-ing</strong></p>",
+      "readingQuestions": [
+        {
+          "id": "rq9-1",
+          "text": "It is a sunny day. The children are in the park. Ali is running. Ayşe is reading a book under the tree. The dog is sleeping.",
+          "question": "What is Ayşe doing?",
+          "options": [
+            "Running",
+            "Reading a book",
+            "Sleeping",
+            "Eating ice cream"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq9-2",
+          "text": "Look at the animals! The lion is eating meat. The monkeys are eating bananas. The elephant is drinking water.",
+          "question": "What are the monkeys eating?",
+          "options": [
+            "Meat",
+            "Apples",
+            "Bananas",
+            "Cake"
+          ],
+          "correctAnswer": 2
         }
       ]
     },
@@ -3078,6 +3294,33 @@
           ],
           "correctAnswer": 0,
           "xpReward": 25
+        }
+      ],
+      "topicSummary": "<h3>Festivaller ve Tatiller</h3><p>Önemli günleri (Independence Day, Children's Day) ve sayıları (100-1000) öğrenelim.</p><ul><li><strong>Republic Day:</strong> Cumhuriyet Bayramı</li><li><strong>Victory Day:</strong> Zafer Bayramı</li></ul><p><strong>Sayılar:</strong></p><ul><li>100: One hundred</li><li>1000: One thousand</li></ul>",
+      "readingQuestions": [
+        {
+          "id": "rq10-1",
+          "text": "Today is the 23rd of April. It is Children's Day. We decorate our school with flags and balloons. We are very happy.",
+          "question": "What festival is it?",
+          "options": [
+            "Republic Day",
+            "Victory Day",
+            "Children's Day",
+            "New Year"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "rq10-2",
+          "text": "There are 365 days in a year. There are 12 months. My favorite month is June because schools close.",
+          "question": "How many days are there in a year?",
+          "options": [
+            "30",
+            "100",
+            "365",
+            "1000"
+          ],
+          "correctAnswer": 2
         }
       ]
     }
