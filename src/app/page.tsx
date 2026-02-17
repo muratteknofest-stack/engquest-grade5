@@ -46,6 +46,17 @@ export default function Home() {
                 <span className="font-bold text-white pr-2 hidden md:block">Okuma & Anlama</span>
               </motion.button>
             </Link>
+
+            <Link href="/screening">
+              <motion.button
+                whileHover={{ scale: 1.05, x: 5 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-white/10 backdrop-blur-md border border-white/20 p-3 rounded-full shadow-lg flex items-center gap-3 hover:bg-white/20 transition-colors"
+              >
+                <span className="text-2xl">🏆</span>
+                <span className="font-bold text-white pr-2 hidden md:block">Genel Tarama</span>
+              </motion.button>
+            </Link>
           </div>
         </>
       )}
