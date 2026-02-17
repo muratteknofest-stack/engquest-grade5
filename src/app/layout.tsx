@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Outfit } from 'next/font/google';
 import './globals.css';
 import AudioManager from '@/components/AudioManager';
+import LoginScreen from '@/components/LoginScreen';
 
 const outfit = Outfit({ subsets: ['latin'] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
         <div className="fixed inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#16213E] to-[#0F3460] -z-50" />
         <div className="game-bg min-h-screen">
           <AudioManager />
+          <LoginScreen />
           {children}
         </div>
       </body>

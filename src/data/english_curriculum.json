@@ -298,6 +298,33 @@
           "correctAnswer": 2,
           "xpReward": 25
         }
+      ],
+      "topicSummary": "<h3>Tanışma ve Selamlaşma</h3><p>İngilizcede biriyle tanışırken şu kalıpları kullanırız:</p><ul><li><strong>Hello / Hi:</strong> Merhaba / Selam</li><li><strong>My name is... / I am...:</strong> Benim adım... / Ben...</li><li><strong>Nice to meet you:</strong> Tanıştığıma memnun oldum.</li></ul><p><strong>Nasılsın diye sormak için:</strong></p><ul><li><strong>How are you?</strong> (Nasılsın?)</li><li><strong>I am fine, thank you.</strong> (İyiyim, teşekkürler.)</li></ul><p><strong>To Be (Olmak) Fiili:</strong></p><ul><li>I <strong>am</strong> (Ben)</li><li>You <strong>are</strong> (Sen)</li><li>He/She/It <strong>is</strong> (O)</li></ul>",
+      "readingQuestions": [
+        {
+          "id": "rq1-1",
+          "text": "Tom: Hello! My name is Tom. What is your name?\nAyşe: Hi, Tom! My name is Ayşe. I am from Turkey.\nTom: Nice to meet you, Ayşe!\nAyşe: Nice to meet you too, Tom.",
+          "question": "Where is Ayşe from?",
+          "options": [
+            "England",
+            "Turkey",
+            "USA",
+            "France"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq1-2",
+          "text": "Teacher: Good morning class!\nStudents: Good morning teacher!\nTeacher: How are you today?\nStudents: We are fine, thank you.",
+          "question": "When does this conversation happen?",
+          "options": [
+            "At night",
+            "In the afternoon",
+            "In the morning",
+            "In the evening"
+          ],
+          "correctAnswer": 2
+        }
       ]
     },
     {
