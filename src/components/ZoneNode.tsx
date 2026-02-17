@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useGameStore } from '@/store/gameStore';
 import Link from 'next/link';
+import { soundManager } from '@/lib/sound';
 
 interface ZoneNodeProps {
     id: number;
@@ -45,7 +46,10 @@ export default function ZoneNode({
         >
             {/* Zone Circle */}
             {isUnlocked ? (
-                <Link href={hasContent ? `/unit/${id}` : '#'}>
+                <Link
+                    href={hasContent ? `/unit/${id}` : '#'}
+                    onClick={() => soundManager.playSFX('click')}
+                >
                     <motion.div
                         whileHover={hasContent ? { scale: 1.12, rotate: 3 } : {}}
                         whileTap={hasContent ? { scale: 0.95 } : {}}
@@ -96,7 +100,10 @@ export default function ZoneNode({
                     </motion.div>
                 </Link>
             ) : (
-                <div className="relative">
+                <div
+                    className="relative cursor-pointer"
+                    onClick={() => soundManager.playSFX('error')}
+                >
                     <div
                         className="w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center text-3xl sm:text-4xl"
                         style={{
@@ -109,7 +116,7 @@ export default function ZoneNode({
                 </div>
             )}
 
-            {/* Zone Info Card */}
+            {/* Zone Info Card with interaction sound */}
             <motion.div
                 whileHover={isUnlocked ? { x: isLeft ? 4 : -4 } : {}}
                 className="glass-card px-5 py-3 max-w-[220px] sm:max-w-[280px]"

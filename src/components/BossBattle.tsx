@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '@/store/gameStore';
+import { soundManager } from '@/lib/sound';
 
 interface QuizQuestion {
     id: string;
@@ -49,6 +50,7 @@ export default function BossBattle({ questions, unitId, onComplete }: BossBattle
     }, [timeLeft, gameOver, showResult]);
 
     const handleTimeout = () => {
+        soundManager.playSFX('error');
         loseHeart();
         setShowResult(true);
         setSelectedAnswer(-1);
@@ -71,15 +73,18 @@ export default function BossBattle({ questions, unitId, onComplete }: BossBattle
         setShowResult(true);
 
         if (answerIndex === currentQuestion.correctAnswer) {
+            soundManager.playSFX('success');
             setScore((prev) => prev + 1);
             addXP(currentQuestion.xpReward);
         } else {
+            soundManager.playSFX('error');
             loseHeart();
             checkGameOver();
         }
     };
 
     const handleNext = () => {
+        soundManager.playSFX('click');
         if (hearts <= 0) {
             setGameOver(true);
             return;
@@ -93,14 +98,18 @@ export default function BossBattle({ questions, unitId, onComplete }: BossBattle
             // Quiz complete
             const passed = score + (selectedAnswer === currentQuestion.correctAnswer ? 1 : 0) >= Math.ceil(questions.length * 0.6);
             if (passed) {
+                soundManager.playSFX('star');
                 completeUnit(unitId);
                 addCoins(30);
+            } else {
+                soundManager.playSFX('error');
             }
             onComplete(passed);
         }
     };
 
     const handleRetryBattle = () => {
+        soundManager.playSFX('click');
         resetHearts();
         setCurrentIndex(0);
         setSelectedAnswer(null);

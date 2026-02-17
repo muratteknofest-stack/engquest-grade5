@@ -3,6 +3,7 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '@/store/gameStore';
+import { soundManager } from '@/lib/sound';
 
 interface SentenceData {
     id: string;
@@ -40,12 +41,14 @@ export default function SentenceBuilder({ sentences, onComplete }: SentenceBuild
 
     const handleSelectWord = useCallback((word: string, index: number) => {
         if (status !== 'playing') return;
+        soundManager.playSFX('click');
         setSelectedWords((prev) => [...prev, word]);
         setAvailableWords((prev) => prev.filter((_, i) => i !== index));
     }, [status]);
 
     const handleDeselectWord = useCallback((word: string, index: number) => {
         if (status !== 'playing') return;
+        soundManager.playSFX('click');
         setAvailableWords((prev) => [...prev, word]);
         setSelectedWords((prev) => prev.filter((_, i) => i !== index));
     }, [status]);
@@ -53,24 +56,29 @@ export default function SentenceBuilder({ sentences, onComplete }: SentenceBuild
     const handleCheck = () => {
         const builtSentence = selectedWords.join(' ');
         if (builtSentence === currentSentence.correctSentence) {
+            soundManager.playSFX('success');
             setStatus('correct');
             addXP(15);
             addCoins(5);
             markSentenceComplete(currentSentence.id);
         } else {
+            soundManager.playSFX('error');
             setStatus('wrong');
         }
     };
 
     const handleNext = () => {
+        soundManager.playSFX('click');
         if (currentIndex < sentences.length - 1) {
             setCurrentIndex((prev) => prev + 1);
+            setStatus('playing');
         } else {
             onComplete();
         }
     };
 
     const handleRetry = () => {
+        soundManager.playSFX('click');
         const shuffled = [...currentSentence.words].sort(() => Math.random() - 0.5);
         setAvailableWords(shuffled);
         setSelectedWords([]);

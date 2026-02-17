@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useGameStore } from '@/store/gameStore';
+import { soundManager } from '@/lib/sound';
 
 interface FlashcardData {
     id: string;
@@ -43,6 +44,7 @@ export default function Flashcard({ cards, onComplete }: FlashcardProps) {
     }, []);
 
     const handleNext = () => {
+        soundManager.playSFX('click');
         markFlashcardViewed(currentCard.id);
         addXP(5);
 
@@ -50,12 +52,14 @@ export default function Flashcard({ cards, onComplete }: FlashcardProps) {
             setIsFlipped(false);
             setTimeout(() => setCurrentIndex((prev) => prev + 1), 200);
         } else {
+            soundManager.playSFX('success');
             onComplete();
         }
     };
 
     const handlePrev = () => {
         if (currentIndex > 0) {
+            soundManager.playSFX('click');
             setIsFlipped(false);
             setTimeout(() => setCurrentIndex((prev) => prev - 1), 200);
         }
@@ -89,7 +93,10 @@ export default function Flashcard({ cards, onComplete }: FlashcardProps) {
                     transition={{ duration: 0.3 }}
                     className="w-full max-w-md cursor-pointer"
                     style={{ perspective: '1000px' }}
-                    onClick={() => setIsFlipped(!isFlipped)}
+                    onClick={() => {
+                        soundManager.playSFX('click');
+                        setIsFlipped(!isFlipped);
+                    }}
                 >
                     <motion.div
                         className="relative w-full h-72 sm:h-80"

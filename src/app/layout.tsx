@@ -1,18 +1,13 @@
-import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Outfit } from 'next/font/google';
+import './globals.css';
+import AudioManager from '@/components/AudioManager';
 
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-outfit",
-});
+const outfit = Outfit({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "EngQuest: 5. Sınıf Macerası",
-  description:
-    "İngilizce öğrenme macerası! Adaları keşfet, boss'ları yen ve eğlenceli mini oyunlarla 5. sınıf İngilizce müfredatını öğren.",
-  keywords: ["English", "learning", "game", "5th grade", "EFL", "education", "İngilizce", "öğrenme", "oyun"],
+  title: 'EngQuest: 5. Sınıf Macerası',
+  description: 'Eğlenceli İngilizce Öğrenme Oyunu',
 };
 
 export default function RootLayout({
@@ -22,8 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr">
-      <body className={`${outfit.variable} font-[family-name:var(--font-outfit)] antialiased`}>
-        <div className="game-bg">
+      <body className={outfit.className}>
+        <div className="fixed inset-0 bg-gradient-to-br from-[#1A1A2E] via-[#16213E] to-[#0F3460] -z-50" />
+        <div className="game-bg min-h-screen">
+          <AudioManager />
           {children}
         </div>
       </body>

@@ -85,9 +85,9 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ type: 'spring', bounce: 0.5 }}
-                    className="relative z-10"
+                    className="relative z-10 flex flex-col items-center"
                 >
-                    <div className="glass-card px-8 py-4 rounded-full border-2 border-[#6C5CE7]">
+                    <div className="glass-card px-8 py-4 rounded-full border-2 border-[#6C5CE7] mb-6">
                         <span className="text-4xl md:text-6xl font-black text-[#A29BFE]">
                             5-E Sınıfı
                         </span>
@@ -95,6 +95,18 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
                             Merhaba! 👋
                         </span>
                     </div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.5 }}
+                        className="glass-card px-6 py-2 rounded-xl border border-[#00CEC9]/30 bg-[#00CEC9]/10"
+                    >
+                        <span className="text-sm text-[#B2B2D8] block font-medium">Yapımcı</span>
+                        <span className="text-lg font-bold text-[#00CEC9] tracking-wider">
+                            METİN ALPEREN UZUNER
+                        </span>
+                    </motion.div>
                 </motion.div>
             )}
         </motion.div>
