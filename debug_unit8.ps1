@@ -1,0 +1,6 @@
+$content = Get-Content -Path ".\src\data\english_curriculum.json"
+Write-Host "Line 2774: '$($content[2773])'"
+Write-Host "Line 2775: '$($content[2774])'"
+Write-Host "Line 2776: '$($content[2775])'"
+Write-Host "Line 2777: '$($content[2776])'"
+Write-Host "Line 2778: '$($content[2777])'"

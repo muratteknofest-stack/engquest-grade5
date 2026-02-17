@@ -299,7 +299,7 @@
           "xpReward": 25
         }
       ],
-      "topicSummary": "<h3>Tanışma ve Selamlaşma</h3><p>İngilizcede biriyle tanışırken şu kalıpları kullanırız:</p><ul><li><strong>Hello / Hi:</strong> Merhaba / Selam</li><li><strong>My name is... / I am...:</strong> Benim adım... / Ben...</li><li><strong>Nice to meet you:</strong> Tanıştığıma memnun oldum.</li></ul><p><strong>Nasılsın diye sormak için:</strong></p><ul><li><strong>How are you?</strong> (Nasılsın?)</li><li><strong>I am fine, thank you.</strong> (İyiyim, teşekkürler.)</li></ul><p><strong>To Be (Olmak) Fiili:</strong></p><ul><li>I <strong>am</strong> (Ben)</li><li>You <strong>are</strong> (Sen)</li><li>He/She/It <strong>is</strong> (O)</li></ul>",
+      "topicSummary": "<h3>Tanışma ve Selamlaşma</h3><p>İngilizcede iletişim kurmanın temel yolları:</p><h4>1. Selamlaşma (Greetings)</h4><ul><li><strong>Hello / Hi:</strong> Merhaba / Selam</li><li><strong>Good morning:</strong> Günaydın</li><li><strong>Good afternoon:</strong> Tünaydın</li><li><strong>Good evening:</strong> İyi akşamlar</li><li><strong>Good night:</strong> İyi geceler</li></ul><h4>2. Kendini Tanıtma (Introduction)</h4><ul><li><strong>My name is...:</strong> Benim adım...</li><li><strong>I am...:</strong> Ben...</li><li><strong>Nice to meet you:</strong> Tanıştığıma memnun oldum.</li></ul><h4>3. Ülkeler ve Milliyetler (Countries & Nationalities)</h4><p>Nereli olduğunu sormak için:</p><ul><li><strong>Where are you from?</strong> (Nerelisin?) <br> -> I am from <strong>Turkey</strong>. (Türkiye'denim.)</li><li><strong>What is your nationality?</strong> (Milliyetin ne?) <br> -> I am <strong>Turkish</strong>. (Türküm.)</li></ul><h4>4. To Be (Olmak) Fiili</h4><table style='width:100%; border-collapse: collapse; margin-top: 10px;'><tr><td style='border: 1px solid #ddd; padding: 8px;'>I <strong>am</strong></td><td style='border: 1px solid #ddd; padding: 8px;'>He/She/It <strong>is</strong></td><td style='border: 1px solid #ddd; padding: 8px;'>You/We/They <strong>are</strong></td></tr></table>",
       "readingQuestions": [
         {
           "id": "rq1-1",
@@ -322,6 +322,42 @@
             "In the afternoon",
             "In the morning",
             "In the evening"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "rq1-3",
+          "text": "Hi, I am Clara. I am ten years old. I am from Germany. I am German. I speak German and English.",
+          "question": "What languages does Clara speak?",
+          "options": [
+            "German only",
+            "English only",
+            "German and English",
+            "Turkish"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "rq1-4",
+          "text": "This is Pablo. He is from Spain. He is Spanish. He likes playing football.",
+          "question": "Where is Pablo from?",
+          "options": [
+            "Italy",
+            "Spain",
+            "Germany",
+            "France"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq1-5",
+          "text": "A: Nice to meet you.\nB: Nice to meet you too.\nA: See you later!\nB: Goodbye!",
+          "question": "What does B say at the end?",
+          "options": [
+            "Hello",
+            "Good morning",
+            "Goodbye",
+            "Thank you"
           ],
           "correctAnswer": 2
         }
@@ -639,7 +675,7 @@
           "xpReward": 25
         }
       ],
-      "topicSummary": "<h3>Şehirde Yön Tarifi</h3><p>Şehirdeki yerleri tarif ederken <strong>Yer Edatlarını (Prepositions)</strong> kullanırız:</p><ul><li><strong>Next to:</strong> Yanında</li><li><strong>Behind:</strong> Arkasında</li><li><strong>Between:</strong> Arasında</li><li><strong>In front of:</strong> Önünde</li></ul><p><strong>Yön Tarifi Verirken:</strong></p><ul><li><strong>Turn left:</strong> Sola dön</li><li><strong>Turn right:</strong> Sağa dön</li><li><strong>Go straight:</strong> Düz git</li></ul>",
+      "topicSummary": "<h3>Şehirde Yön Tarifi (Directions)</h3><p>Şehirdeki önemli yerleri ve konumlarını anlatmayı öğrenelim.</p><h4>1. Önemli Yerler (Places)</h4><ul><li><strong>Library:</strong> Kütüphane</li><li><strong>Hospital:</strong> Hastane</li><li><strong>Bakery:</strong> Fırın</li><li><strong>Pharmacy:</strong> Eczane</li><li><strong>Museum:</strong> Müze</li></ul><h4>2. Yer Edatları (Prepositions of Place)</h4><ul><li><strong>Next to:</strong> Bitişiğinde/Yanında</li><li><strong>Behind:</strong> Arkasında</li><li><strong>Between:</strong> İki şeyin arasında</li><li><strong>In front of:</strong> Önünde</li><li><strong>Opposite:</strong> Karşısında</li></ul><h4>3. Yön Tarifi (Giving Directions)</h4><ul><li><strong>Turn left:</strong> Sola dön</li><li><strong>Turn right:</strong> Sağa dön</li><li><strong>Go straight ahead:</strong> Dümdüz git</li><li><strong>Go past the bank:</strong> Bankayı geç</li><li><strong>Take the second right:</strong> İkinci sağdan dön</li></ul>",
       "readingQuestions": [
         {
           "id": "rq2-1",
@@ -662,6 +698,42 @@
             "Between the school and museum",
             "Behind the bank",
             "In front of the hospital"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq2-3",
+          "text": "Tourist: Is there a pharmacy near here?\nWoman: Yes, go straight. It is opposite the cinema.\nTourist: Thank you.",
+          "question": "Where is the pharmacy?",
+          "options": [
+            "Next to the cinema",
+            "Behind the cinema",
+            "Opposite the cinema",
+            "In the cinema"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "rq2-4",
+          "text": "Hello, I am Jack. I live in Green Street. My house is next to a big supermarket. There is a park behind my house.",
+          "question": "What is next to Jack's house?",
+          "options": [
+            "A park",
+            "A school",
+            "A supermarket",
+            "A hospital"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "rq2-5",
+          "text": "To go to the museum: Go straight. Turn left at the corner. Walk past the bank. The museum is on your right.",
+          "question": "Which way should you turn?",
+          "options": [
+            "Right",
+            "Left",
+            "Back",
+            "Around"
           ],
           "correctAnswer": 1
         }
@@ -1969,7 +2041,7 @@
           "xpReward": 20
         }
       ],
-      "topicSummary": "<h3>Sağlık ve Tavsiyeler (Should)</h3><p>Hastalıkları ifade ederken \"I have...\" (Bende ... var) kalıbını kullanırız.</p><ul><li>I have a <strong>headache</strong>. (Başım ağrıyor.)</li><li>She has a <strong>fever</strong>. (Ateşi var.)</li></ul><p><strong>Tavsiye Vermek (Should):</strong></p><ul><li>You <strong>should</strong> see a doctor. (Doktora gitmelisin.)</li><li>You <strong>shouldn't</strong> drink cold water. (Soğuk su içmemelisin.)</li></ul>",
+      "topicSummary": "<h3>Sağlık ve Tavsiyeler (Health & Advice)</h3><p>Hastalıklar ve yapılması gerekenler.</p><h4>1. Hastalıklar (Illnesses)</h4><ul><li><strong>Headache:</strong> Baş ağrısı</li><li><strong>Stomachache:</strong> Karın ağrısı</li><li><strong>Toothache:</strong> Diş ağrısı</li><li><strong>Sore throat:</strong> Boğaz ağrısı</li><li><strong>Fever:</strong> Ateş</li><li><strong>Cough:</strong> Öksürük</li><li><strong>Broken leg:</strong> Kırık bacak</li></ul><h4>2. İhtiyaçlar (Needs)</h4><ul><li><strong>Medicine:</strong> İlaç</li><li><strong>Pill:</strong> Hap</li><li><strong>Tissue:</strong> Mendil</li><li><strong>Plaster:</strong> Yara bandı</li></ul><h4>3. Tavsiye Vermek (Giving Advice)</h4><ul><li><strong>You should...</strong> (Yapmalısın) <br> -> You should see a doctor. (Doktora gitmelisin.) <br> -> You should rest. (Dinlenmelisin.)</li><li><strong>You shouldn't...</strong> (Yapmamalısın) <br> -> You shouldn't drink cold water. (Soğuk su içmemelisin.) <br> -> You shouldn't eat candies. (Şeker yememelisin.)</li></ul>",
       "readingQuestions": [
         {
           "id": "rq6-1",
@@ -1992,6 +2064,42 @@
             "He has a fever",
             "He has a broken leg",
             "He is hungry"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq6-3",
+          "text": "Sarah has a toothache. She loves eating chocolate and candies. Her mother says: \"You shouldn't eat junk food. You should brush your teeth.\"",
+          "question": "Why does Sarah have a toothache?",
+          "options": [
+            "She runs fast",
+            "She eats chocolate",
+            "She drinks milk",
+            "She sleeps early"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq6-4",
+          "text": "Tom: My leg hurts. I think it is broken.\nJack: Oh no! You should go to the hospital immediately. You shouldn't walk.",
+          "question": "What happened to Tom?",
+          "options": [
+            "He has a headache",
+            "He has a broken leg",
+            "He has a cold",
+            "He is fine"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq6-5",
+          "text": "I am very tired today. I played football for 2 hours. I should take a shower and sleep.",
+          "question": "How does he feel?",
+          "options": [
+            "Happy",
+            "Tired",
+            "Sad",
+            "Angry"
           ],
           "correctAnswer": 1
         }
@@ -2300,7 +2408,7 @@
           "xpReward": 25
         }
       ],
-      "topicSummary": "<h3>Film Türleri ve Davet Etme</h3><p>Film türleri: <strong>Comedy, Horror, Action, Animation</strong>.</p><p><strong>Birini Davet Etme:</strong></p><ul><li><strong>Would you like to</strong> watch a movie? (Film izlemek ister misin?)</li></ul><p><strong>Cevap Verme:</strong></p><ul><li><strong>Yes, that sounds great.</strong> (Evet, kulağa harika geliyor.)</li><li><strong>I'm sorry, I can't.</strong> (Üzgünüm, yapamam.)</li></ul>",
+      "topicSummary": "<h3>Film ve Eğlence (Movies & Entertainment)</h3><p>Film türleri ve parti hazırlıkları.</p><h4>1. Film Türleri (Movie Types)</h4><ul><li><strong>Comedy:</strong> Komedi (Funny)</li><li><strong>Horror:</strong> Korku (Scary)</li><li><strong>Action:</strong> Aksiyon (Exciting)</li><li><strong>Animation:</strong> Animasyon (Fun)</li><li><strong>Drama:</strong> Dram (Sad)</li><li><strong>Science Fiction:</strong> Bilim Kurgu (Interesting)</li></ul><h4>2. Davet Etme (Inviting)</h4><ul><li><strong>Would you like to...?</strong> (İster misin?) <br> -> Would you like to watch a movie? <br> -> Would you like to come to my party?</li></ul><h4>3. Cevap Verme (Responding)</h4><ul><li><strong>Accepting (Kabul):</strong> <br> -> Yes, I'd love to. (Evet, çok isterim.) <br> -> That sounds great. (Kulağa harika geliyor.)</li><li><strong>Refusing (Red):</strong> <br> -> I'm sorry, I can't. (Üzgünüm, yapamam.) <br> -> Maybe later. (Belki sonra.)</li></ul>",
       "readingQuestions": [
         {
           "id": "rq7-1",
@@ -2323,6 +2431,42 @@
             "A birthday party",
             "A school trip",
             "A football match"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq7-3",
+          "text": "Can: Let's watch 'Dracula'.\nEfe: Oh no! It is a horror movie. I don't like horror movies. They are scary.\nCan: Okay, let's watch 'Toy Story' then.",
+          "question": "Why doesn't Efe want to watch 'Dracula'?",
+          "options": [
+            "It is funny",
+            "It is scary",
+            "It is long",
+            "It is bad"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq7-4",
+          "text": "A: Would you like to play football?\nB: I'm sorry, I can't. I must study for my exam.\nA: Okay, good luck!",
+          "question": "Why can't B play football?",
+          "options": [
+            "He is sick",
+            "He is tired",
+            "He has an exam",
+            "He hates football"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "rq7-5",
+          "text": "My favorite movie is 'Spiderman'. It is an action movie. Spiderman is very strong and fast. He climbs walls.",
+          "question": "What kind of movie is Spiderman?",
+          "options": [
+            "Drama",
+            "Action",
+            "Comedy",
+            "Musical"
           ],
           "correctAnswer": 1
         }
@@ -2627,7 +2771,7 @@
           "xpReward": 20
         }
       ],
-      "topicSummary": "<h3>Yetenekler (Can / Can't)</h3><p>Bir şeyi yapabildiğimizi veya yapamadığımızı anlatırken <strong>Can</strong> kullanırız.</p><ul><li>I <strong>can</strong> swim. (Yüzebilirim.)</li><li>He <strong>can</strong> play guitar. (O gitar çalabilir.)</li><li>She <strong>can't</strong> fly. (O uçamaz.)</li><li><strong>Can</strong> you speak English? (İngilizce konuşabilir misin?)</li></ul>",
+      "topicSummary": "<h3>Spor ve Yetenekler (Sports & Abilities)</h3><p>Ne yapabildiğimizi anlatmayı öğrenelim.</p><h4>1. Sporlar (Sports)</h4><ul><li><strong>Swimming:</strong> Yüzme</li><li><strong>Running:</strong> Koşu</li><li><strong>Cycling:</strong> Bisiklet sürme</li><li><strong>Climbing:</strong> Tırmanma</li><li><strong>Hiking:</strong> Doğa yürüyüşü</li><li><strong>Ice skating:</strong> Buz pateni</li></ul><h4>2. Can / Can't (Yapabilmek / Yapamamak)</h4><ul><li><strong>I can swim.</strong> (Yüzebilirim.)</li><li><strong>I can't fly.</strong> (Uçamam.)</li><li><strong>Can you speak German?</strong> (Almanca konuşabilir misin?) <br> -> No, I can't. / Yes, I can.</li></ul><h4>3. Play / Do / Go</h4><ul><li><strong>Play:</strong> Topla oynanan oyunlar (Play football, play tennis)</li><li><strong>Do:</strong> Bireysel sporlar (Do gymnastics, do karate)</li><li><strong>Go:</strong> -ing ile bitenler (Go swimming, go running)</li></ul>",
       "readingQuestions": [
         {
           "id": "rq8-1",
@@ -2652,6 +2796,42 @@
             "Only Piano"
           ],
           "correctAnswer": 0
+        },
+        {
+          "id": "rq8-3",
+          "text": "A: Can you swim?\nB: No, I can't. But I can run very fast.\nA: I can swim well. Let's go swimming and I teach you.",
+          "question": "What can B do?",
+          "options": [
+            "Swim",
+            "Run fast",
+            "Fly",
+            "Ski"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq8-4",
+          "text": "This is Michael. He is a basketball player. He is very tall. He can jump high and throw the ball.",
+          "question": "What sport does Michael do?",
+          "options": [
+            "Football",
+            "Tennis",
+            "Basketball",
+            "Golf"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "rq8-5",
+          "text": "Fish can swim underwater. Birds can fly in the sky. Horses can run very fast.",
+          "question": "What can birds do?",
+          "options": [
+            "Swim",
+            "Run",
+            "Fly",
+            "Crawl"
+          ],
+          "correctAnswer": 2
         }
       ]
     },
@@ -2960,7 +3140,7 @@
           "xpReward": 20
         }
       ],
-      "topicSummary": "<h3>Şimdiki Zaman (Present Continuous)</h3><p>Şu anda (konuşma anında) yapılan eylemleri anlatırız.</p><ul><li>I <strong>am running</strong>. (Koşuyorum.)</li><li>The bird <strong>is flying</strong>. (Kuş uçuyor.)</li><li>They <strong>are playing</strong> football. (Onlar futbol oynuyorlar.)</li></ul><p>Formül: <strong>am/is/are + Fiil-ing</strong></p>",
+      "topicSummary": "<h3>Hayvanlar Alemi (The Animal World)</h3><p>Hayvanları ve şu an ne yaptıklarını anlatalım.</p><h4>1. Vahşi Hayvanlar (Wild Animals)</h4><ul><li><strong>Lion:</strong> Aslan</li><li><strong>Tiger:</strong> Kaplan</li><li><strong>Elephant:</strong> Fil</li><li><strong>Monkey:</strong> Maymun</li><li><strong>Giraffe:</strong> Zürafa</li></ul><h4>2. Çiftlik Hayvanları (Farm Animals)</h4><ul><li><strong>Cow:</strong> İnek</li><li><strong>Sheep:</strong> Koyun</li><li><strong>Horse:</strong> At</li><li><strong>Chicken:</strong> Tavuk</li><li><strong>Duck:</strong> Ördek</li></ul><h4>3. Şimdiki Zaman (Present Continuous)</h4><p>Şu an yapılan işler:</p><ul><li>The birds <strong>are flying</strong>. (Kuşlar uçuyor.)</li><li>The dog <strong>is barking</strong>. (Köpek havlıyor.)</li><li>I <strong>am watching</strong> the animals. (Hayvanları izliyorum.)</li></ul>",
       "readingQuestions": [
         {
           "id": "rq9-1",
@@ -2985,6 +3165,42 @@
             "Cake"
           ],
           "correctAnswer": 2
+        },
+        {
+          "id": "rq9-3",
+          "text": "We are at the zoo. The giraffe is eating leaves from the tall tree. The hippo is swimming in the water.",
+          "question": "What is the giraffe doing?",
+          "options": [
+            "Sleeping",
+            "Running",
+            "Eating leaves",
+            "Drinking water"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "rq9-4",
+          "text": "Look! The cat is climbing the tree. It is trying to catch the bird. But the bird is flying away.",
+          "question": "What is the cat doing?",
+          "options": [
+            "Climbing the tree",
+            "Flying",
+            "Swimming",
+            "Dancing"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": "rq9-5",
+          "text": "The baby ducks are following their mother. They are walking to the lake. They want to swim.",
+          "question": "Where are they walking?",
+          "options": [
+            "To the school",
+            "To the lake",
+            "To the market",
+            "To the house"
+          ],
+          "correctAnswer": 1
         }
       ]
     },
@@ -3296,7 +3512,7 @@
           "xpReward": 25
         }
       ],
-      "topicSummary": "<h3>Festivaller ve Tatiller</h3><p>Önemli günleri (Independence Day, Children's Day) ve sayıları (100-1000) öğrenelim.</p><ul><li><strong>Republic Day:</strong> Cumhuriyet Bayramı</li><li><strong>Victory Day:</strong> Zafer Bayramı</li></ul><p><strong>Sayılar:</strong></p><ul><li>100: One hundred</li><li>1000: One thousand</li></ul>",
+      "topicSummary": "<h3>Kutlamalar (Celebrations)</h3><p>Özel günleri ve bayramları öğrenelim.</p><h4>1. Bayramlar (Holidays)</h4><ul><li><strong>Republic Day:</strong> Cumhuriyet Bayramı (29 Ekim)</li><li><strong>Victory Day:</strong> Zafer Bayramı (30 Ağustos)</li><li><strong>Children's Day:</strong> Çocuk Bayramı (23 Nisan)</li><li><strong>Youth and Sports Day:</strong> Gençlik ve Spor Bayramı (19 Mayıs)</li></ul><h4>2. Sayılar (Numbers 100-1000)</h4><ul><li>100: One hundred</li><li>200: Two hundred</li><li>500: Five hundred</li><li>1000: One thousand</li></ul><h4>3. Parti Kelimeleri (Party Words)</h4><ul><li><strong>Decorate:</strong> Süslemek</li><li><strong>Celebrate:</strong> Kutlamak</li><li><strong>Costume:</strong> Kostüm</li><li><strong>Guest:</strong> Misafir</li></ul>",
       "readingQuestions": [
         {
           "id": "rq10-1",
@@ -3321,6 +3537,42 @@
             "1000"
           ],
           "correctAnswer": 2
+        },
+        {
+          "id": "rq10-3",
+          "text": "It is New Year's Eve. We have a big party at home. We wear colorful hats and watch fireworks at midnight.",
+          "question": "What do they watch?",
+          "options": [
+            "TV",
+            "Fireworks",
+            "Birds",
+            "Movies"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "rq10-4",
+          "text": "In Turkey, we celebrate Victory Day on August 30th. It is a very important national holiday.",
+          "question": "When is Victory Day?",
+          "options": [
+            "April 23",
+            "May 19",
+            "October 29",
+            "August 30"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": "rq10-5",
+          "text": "My grandmother is 100 years old today. We have a big cake with 100 candles. Happy birthday grandma!",
+          "question": "How old is the grandmother?",
+          "options": [
+            "Ten",
+            "One hundred",
+            "Fifty",
+            "One thousand"
+          ],
+          "correctAnswer": 1
         }
       ]
     }
